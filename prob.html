@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h2>Feedback Form</h2>
+
+    <form action="/submit" method="POST">
+        <!-- Dropdown menu for feedback type -->
+        <label for="feedbackType">Feedback Type:</label>
+        <select id="feedbackType" name="feedbackType">
+            <option value="general">General</option>
+            <option value="bug">Bug Report</option>
+            <option value="suggestion">Suggestion</option>
+        </select>
+        <br><br>
+
+        <!-- Text area for user's message -->
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <!-- Radio buttons for website rating -->
+        <label>Website Rating:</label>
+        <input type="radio" id="rating1" name="rating" value="1">
+        <label for="rating1">1</label>
+        <input type="radio" id="rating2" name="rating" value="2">
+        <label for="rating2">2</label>
+        <input type="radio" id="rating3" name="rating" value="3">
+        <label for="rating3">3</label>
+        <input type="radio" id="rating4" name="rating" value="4">
+        <label for="rating4">4</label>
+        <input type="radio" id="rating5" name="rating" value="5">
+        <label for="rating5">5</label>
+        <br><br>
+
+        <!-- Input field for age (number) -->
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" name="age" min="10" max="100">
+        <br><br>
+
+        <!-- Email input field (mandatory) -->
+        <label for="email">Email Address (required):</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Password input field -->
+        <label for="password">Password (min 8 characters):</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        <br><br>
+
+        <!-- Optional website URL input field -->
+        <label for="website">Website (optional):</label>
+        <input type="url" id="website" name="website">
+        <br><br>
+
+        <!-- Checkbox for terms and conditions -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+        <br><br>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
