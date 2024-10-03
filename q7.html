@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Investors</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .investor-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .investor-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .investor-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .investor-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .investor-card h3 {
+            margin: 15px 0 5px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .investor-card p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .company-logo {
+            width: 50px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="investor-section">
+        <h2>Strategic Investors</h2>
+        <div class="grid-container">
+            <div class="investor-card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="Vijay Shekhar Sharma">
+                <h3>Vijay Shekhar Sharma</h3>
+                <p>Founder & CEO</p>
+                <img class="company-logo" src="https://img.icons8.com/?size=96&id=68067&format=png" alt="Paytm Logo">
+            </div>
+            <div class="investor-card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png" alt="Kunal Shah">
+                <h3>Kunal Shah</h3>
+                <p>Founder</p>
+                <img class="company-logo" src="data:image/jpeg;base64,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" alt="CRED Logo">
+            </div>
+            <div class="investor-card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg" alt="Amrish Rau">
+                <h3>Amrish Rau</h3>
+                <p>CEO</p>
+                <img class="company-logo" src="data:image/png;base64,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" alt="Pine Labs Logo">
+            </div>
+            <div class="investor-card">
+                <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="Sampad Swain">
+                <h3>Sampad Swain</h3>
+                <p>Co-Founder & CEO</p>
+                <img class="company-logo" src="data:image/png;base64,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" alt="Instamojo Logo">
+            </div>
+            
+            <!-- Add more investor cards here following the same structure -->
+        </div>
+    </div>
+</body>
+</html>
