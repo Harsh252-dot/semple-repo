@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Offers</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .offers-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .offer-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .offer-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .offer-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .offer-details {
+            margin-top: 15px;
+        }
+
+        .offer-details h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .offer-details p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .offer-code {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #ff6f61;
+            color: white;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .offer-code:hover {
+            background-color: #ff4d47;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="offers-section">
+        <h2>OFFERS</h2>
+        <div class="grid-container">
+            <div class="offer-card">
+                <img src="https://images.sugarcosmetics.com/Promotion/08fc6f1c-23c2-4d1b-be3e-8b6ca39aedb3.jpg" alt="Offer 1">
+                <div class="offer-details">
+                    <h3>WOMEN'S DAY EXCLUSIVE</h3>
+                    <p>₹300 OFF on orders of ₹999</p>
+                    <span class="offer-code">DEAL300</span>
+                </div>
+            </div>
+            <div class="offer-card">
+                <img src="https://images.sugarcosmetics.com/Promotion/c79454c3-f4d9-4ac4-9aaa-77d1d43b8425.jpg" alt="Offer 2">
+                <div class="offer-details">
+                    <h3>FREE POUCH</h3>
+                    <p>On orders above ₹599</p>
+                    <span class="offer-code">DEAL599</span>
+                </div>
+            </div>
+            <div class="offer-card">
+                <img src="https://images.sugarcosmetics.com/Promotion/656f7685-ebd5-4792-8266-43aa8b4ad22f.jpg" alt="Offer 3">
+                <div class="offer-details">
+                    <h3>GET OUR BESTSELLING FACE PRIMER FREE</h3>
+                    <p>On orders above ₹499</p>
+                    <span class="offer-code">FACEPRMR</span>
+                </div>
+            </div>
+            <div class="offer-card">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https://cdn.shopify.com/s/files/1/0906/2558/files/SUGAR-Play-Power-Drip-Lip-Gloss.jpg?v=1719893402&w=640&q=75" alt="Offer 4">
+                <div class="offer-details">
+                    <h3>WOMEN'S DAY EXCLUSIVE</h3>
+                    <p>Classy Sling Bag</p>
+                    <span class="offer-code">SLINGBLING999</span>
+                </div>
+            </div>
+            <div class="offer-card">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https://cdn.shopify.com/s/files/1/0906/2558/files/SUGAR-Play-Smooth-Operator-Lip-Crayon.jpg?v=1719899956&w=640&q=75" alt="Offer 5">
+                <div class="offer-details">
+                    <h3>FREE SETTING POWDER</h3>
+                    <p>On orders above ₹799</p>
+                    <span class="offer-code">POWDER799</span>
+                </div>
+            </div>
+            <div class="offer-card">
+                <img src="https://in.sugarcosmetics.com/_next/image?url=https://cdn.shopify.com/s/files/1/0906/2558/files/SUGAR-Play-Vibe-Check-Liquid-Lipstick.jpg?v=1719893862&w=640&q=75" alt="Offer 6">
+                <div class="offer-details">
+                    <h3>LET YOUR EYES BE THE SHOWSTOPPER</h3>
+                    <p>Get a free eyeshadow palette</p>
+                    <span class="offer-code">PALETTE1299</span>
+                </div>
+            </div>
+            <!-- More offer cards can be added here -->
+        </div>
+    </div>
+</body>
+</html>
